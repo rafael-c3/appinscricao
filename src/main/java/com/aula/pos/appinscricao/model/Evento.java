@@ -1,3 +1,5 @@
+package com.aula.pos.appinscricao.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
