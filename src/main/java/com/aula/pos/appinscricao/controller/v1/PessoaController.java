@@ -42,7 +42,7 @@ public class PessoaController {
         }catch (ApiException e){
             return ResponseEntity
                     .status(e.getStatus())
-                    .body(new ErrorResponse(LocalDateTime.now(), e.getStatus(), e.getMessage()));
+                    .body(new ErrorResponse(LocalDateTime.now(), e.getStatus().value(), e.getMessage()));
         }
     }
 
@@ -61,7 +61,7 @@ public class PessoaController {
         }catch(ApiException e){
             return ResponseEntity
                     .status(e.getStatus())
-                    .body(new ErrorResponse(LocalDateTime.now(), e.getStatus(), e.getMessage()));
+                    .body(new ErrorResponse(LocalDateTime.now(), e.getStatus().value(), e.getMessage()));
         }
     }
 
@@ -73,7 +73,7 @@ public class PessoaController {
         }catch (ApiException e){
             return ResponseEntity
                     .status(e.getStatus())
-                    .body(new ErrorResponse(LocalDateTime.now(), e.getStatus(), e.getMessage()));
+                    .body(new ErrorResponse(LocalDateTime.now(), e.getStatus().value(), e.getMessage()));
         }
     }
 }
